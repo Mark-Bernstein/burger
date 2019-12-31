@@ -50,7 +50,7 @@ router.post("/burgers/create", function(req, res) {
 
 
 
-router.put("/api/burgers/:id", function(req, res) {
+router.put("burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
