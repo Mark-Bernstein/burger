@@ -45,7 +45,7 @@ var orm = {
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {
       if (err) {
-        throw err;
+        console.log(err);
       }
       cb(result);
     });
@@ -64,7 +64,7 @@ var orm = {
 
     connection.query(queryString, vals, function(err, result) {
       if (err) {
-        throw err;
+        console.log(err);
       }
 
       cb(result);
@@ -82,25 +82,12 @@ var orm = {
     console.log(queryString);
     connection.query(queryString, function(err, result) {
       if (err) {
-        throw err;
+        console.log(err);
       }
 
       cb(result);
     });
   },
-  delete: function(table, condition, cb) {
-    var queryString = "DELETE FROM " + table;
-    queryString += " WHERE ";
-    queryString += condition;
-
-    connection.query(queryString, function(err, result) {
-      if (err) {
-        throw err;
-      }
-
-      cb(result);
-    });
-  }
 };
 
 // Export the orm object for the model (cat.js).
