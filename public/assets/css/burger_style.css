@@ -1,24 +1,33 @@
-/* li 
-{
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+body {
+  background-color: lightsalmon;
 }
-  
-.label 
-{
-  font-weight: bold;
+
+h1 {
+  text-align: center;
+  color: darkred;
 }
-  
-.create-update-form 
-{
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+
+ol, li {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-  
-.form-group 
-{
-  margin-bottom: 5px;
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
 }
-   */
+
+h2 {
+  text-align: center;
+}
+
+#submitBtn {
+  display: block;
+  margin: 15px auto;
+  width: 10%;
+  height: 15%;
+}
