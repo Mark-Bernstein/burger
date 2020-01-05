@@ -23,11 +23,10 @@ router.get("/burgers", function (req, res) {
 });
 
 
-router.post("/burgers/create", function (req, res) {
+router.post("/api/burgers", function (req, res) {
   burger.create(["burger_name", "devoured"],
-    [
-      req.body.burger_name, req.body.devoured
-    ], function (result) {
+    [ req.body.burger_name, req.body.devoured ], 
+    function (result) {
       // wrapper for orm.js that using MySQL insert callback will return a log to console,
       // render back to index with handle
       console.log("post console log here!!!", result);
@@ -48,7 +47,7 @@ router.post("/burgers/create", function (req, res) {
 // });
 
 
-router.put("burgers/:id", function (req, res) {
+router.put("/api/burgers/:id", function (req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
