@@ -4,7 +4,7 @@ var mysql = require("mysql");
 var connection;
 
 if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.send.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
     host: "lgg2gx1ha7yp2w0k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
