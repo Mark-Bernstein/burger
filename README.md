@@ -10,4 +10,4 @@ Live Heroku link: https://hidden-waters-13451.herokuapp.com/
 
 ## Below is a screenshot of the loaded homepage of the app:
 
-![Burger App Screenshot](/public/assets/img/burgerImage.png)
+![Burger App Screenshot](/public/assets/img/burgerScreenshot.JPG)
